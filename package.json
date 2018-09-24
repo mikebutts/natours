@@ -1,5 +1,27 @@
 {
   "dependencies": {
-    "live-server": "^1.2.0"
-  }
+    "jquery": "^3.3.1",
+    "live-server": "^1.2.0",
+    "node-sass": "4.5.3",
+    "nodemon": "^1.18.4"
+  },
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "watch:sass": "nodemon -e scss -x \"npm run compile:sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikebutts/natours.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikebutts/natours/issues"
+  },
+  "homepage": "https://github.com/mikebutts/natours#readme"
 }
